@@ -16,6 +16,7 @@ def parse_args():
     arg_parser.add_argument('--model_name', type=str, help="Name of a model used")
     arg_parser.add_argument('--targets_path', type=str, help="Path to a .txt file with target words")
     arg_parser.add_argument('--corpora_paths', type=str, help="Paths to corpora separated with ;")
+    arg_parser.add_argument('--corpora_language', type=str, help="english, german, swedish or latin")
     arg_parser.add_argument('--output_path', type=str, help="Path to a result file with embeddings")
     arg_parser.add_argument('--bert_layers', type=str,
                             help="Bert layers to extract (from 0 to 11). Possible ways to provide: "
@@ -36,6 +37,8 @@ def parse_args():
         print('Please specify path to corpora separated with ; (--corpora_paths)')
     elif not args.output_path:
         print('Please specify output path (--output_path)')
+    elif not args.corpora_language or args.corpora_language not in ['english', 'german', 'swedish', 'latin']:
+        print('Please specify a valid corpora language (--corpora_language)')
     else:
         if args.bert_layers:
             global bert_layers
@@ -107,7 +110,10 @@ bert_model = BertModel.from_pretrained(arguments.model_name, output_hidden_state
 bert_model.eval()
 bert_tokenizer = BertTokenizer.from_pretrained(arguments.model_name, state_dict=fine_tuned_model)
 with open(arguments.targets_path) as f:
-    targets = {word.strip()[:-3]: word.strip() for word in f.readlines()}  # discarding part of speech tags in the end
+    if arguments.corpora_language == 'english':
+        targets = {word.strip()[:-3]: word.strip() for word in f.readlines()}
+    else:
+        targets = {word.strip(): word.strip() for word in f.readlines()}  # discarding part of speech tags in the end
 datasets = arguments.corpora_paths.split(';')
 total_embeddings = {i: {} for i in datasets}  # embeddings for all datasets here. Filled in get_bert_embeddings
 for dataset in datasets:

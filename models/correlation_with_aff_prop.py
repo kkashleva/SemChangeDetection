@@ -14,7 +14,8 @@ def parse_args():
         print('Please specify path to embeddings (--embeddings_path)')
     elif not args.dataset_path:
         print('Please specify path to a dataset ; (--dataset_path)')
-    return args
+    else:
+        return args
 
 
 def cluster_word_embeddings_aff_prop(word_embeddings):
@@ -30,7 +31,7 @@ with open(arguments.embeddings_path, 'rb') as f:
     embeddings = pickle.load(f)
 with open(arguments.dataset_path) as f:
     dataset = [i.split() for i in f.readlines()]
-graded = {i[0][:-3]: i[1] for i in dataset}
+graded = {i[0]: i[1] for i in dataset}
 time_epochs = list(embeddings.keys())
 X = []
 y = []
