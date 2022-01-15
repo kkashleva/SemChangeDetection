@@ -15,7 +15,8 @@ def parse_args():
         print('Please specify path to corpora separated with ; (--corpora_paths)')
     elif not args.output_folder:
         print('Please specify output folder (--output_folder)')
-    return args
+    else:
+        return args
 
 
 arguments = parse_args()
