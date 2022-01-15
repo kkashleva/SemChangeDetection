@@ -90,11 +90,11 @@ def get_bert_embeddings(tokens_tensor, texts, model, dataset_name):
                     sum_vec = torch.concat(tuple(token[bert_layers]), dim=0).numpy()
                 else:
                     sum_vec = torch.sum(token[bert_layers], dim=0).numpy()
-                if word not in total_embeddings[dataset_name]:
+                if targets[word] not in total_embeddings[dataset_name]:
                     total_embeddings[dataset_name][targets[word]] = sum_vec  # initial embedding
                 else:  # we just stack the new embedding at the bottom of the previous ones
                     total_embeddings[dataset_name][targets[word]] = np.vstack(
-                        [total_embeddings[dataset_name][word], sum_vec])
+                        [total_embeddings[dataset_name][targets[word]], sum_vec])
 
 
 arguments = parse_args()
