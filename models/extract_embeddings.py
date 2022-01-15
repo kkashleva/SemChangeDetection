@@ -88,9 +88,10 @@ def get_bert_embeddings(tokens_tensor, texts, model, dataset_name):
                 else:
                     sum_vec = torch.sum(token[bert_layers], dim=0).numpy()
                 if word not in total_embeddings[dataset_name]:
-                    total_embeddings[dataset_name][word] = sum_vec  # initial embedding
+                    total_embeddings[dataset_name][targets[word]] = sum_vec  # initial embedding
                 else:  # we just stack the new embedding at the bottom of the previous ones
-                    total_embeddings[dataset_name][word] = np.vstack([total_embeddings[dataset_name][word], sum_vec])
+                    total_embeddings[dataset_name][targets[word]] = np.vstack(
+                        [total_embeddings[dataset_name][word], sum_vec])
 
 
 arguments = parse_args()
@@ -106,7 +107,7 @@ bert_model = BertModel.from_pretrained(arguments.model_name, output_hidden_state
 bert_model.eval()
 bert_tokenizer = BertTokenizer.from_pretrained(arguments.model_name, state_dict=fine_tuned_model)
 with open(arguments.targets_path) as f:
-    targets = [word.strip()[:-3] for word in f.readlines()]  # discarding part of speech tags in the end
+    targets = {word.strip()[:-3]: word.strip() for word in f.readlines()}  # discarding part of speech tags in the end
 datasets = arguments.corpora_paths.split(';')
 total_embeddings = {i: {} for i in datasets}  # embeddings for all datasets here. Filled in get_bert_embeddings
 for dataset in datasets:
