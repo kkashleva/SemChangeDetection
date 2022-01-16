@@ -44,12 +44,14 @@ Fine-tune a pre-trained BERT model.
   checkpoints will be created
 - --save_total_limit (default=None)  
   initialize this argument with a number of maximum checkpoints to be created (delete older checkpoints)
+- --max_seq_length  
+  it is highly recommended setting this to 512 for compatibility with BERT
 
 #### Sample usage:
 
 python run_mlm.py --model_name_or_path bert-base-uncased --train_file "Processed/train.txt" --validation_file
 "Processed/test.txt" --do_train --do_eval --output_dir "Processed/MLM" --line_by_line --save_steps 5000
---save_total_limit 20
+--save_total_limit 20 --max_seq_length 512
 
 ## extract_embeddings.py
 

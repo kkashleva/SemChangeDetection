@@ -19,7 +19,7 @@ def parse_args():
 
 
 def cluster_word_embeddings_aff_prop(word_embeddings):
-    clustering = AffinityPropagation().fit(word_embeddings)
+    clustering = AffinityPropagation(random_state=None).fit(word_embeddings)
     centroids = clustering.cluster_centers_
     return centroids
 
