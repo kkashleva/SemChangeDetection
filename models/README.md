@@ -67,8 +67,6 @@ Extract embeddings for target words (specific layers) from a fine-tuned model.
   Path to a .txt file with target words
 - --corpora_paths  
   Paths to PREPROCESSED corpora separated with ; The entire string with paths has to be surrounded with quotes
-- --corpora_language  
-  One of these: english, german, latin, swedish
 - --output_path  
   Path to a result file with embeddings
 - --bert_layers  
@@ -92,9 +90,9 @@ from 'ccoha1' corpora. EMBEDDINGS['Data/ccoha1.txt']['attack'][1] is the second 
 #### Sample usages:
 
 python extract_embeddings.py --model_path "Processed/pytorch_model.bin" --model_name bert-base-uncased --targets_path
-"targets.txt" --corpora_paths "Processed/processed_ccoha1.txt;Processed/processed_ccoha2.txt" --corpora_language english
+"targets.txt" --corpora_paths "Processed/processed_ccoha1.txt;Processed/processed_ccoha2.txt"
 --output_path "test.pickle"
 
 python extract_embeddings.py --model_path "Processed/pytorch_model.bin" --model_name bert-base-uncased --targets_path
-"targets.txt" --corpora_paths "Processed/processed_ccoha1.txt;Processed/processed_ccoha2.txt" --corpora_language english
+"targets.txt" --corpora_paths "Processed/processed_ccoha1.txt;Processed/processed_ccoha2.txt"
 --output_path "test.pickle" --bert_layers 0,5,7-9,11 --concat_layers

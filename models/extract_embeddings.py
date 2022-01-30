@@ -16,7 +16,7 @@ def parse_args():
     arg_parser.add_argument('--model_name', type=str, help="Name of a model used")
     arg_parser.add_argument('--targets_path', type=str, help="Path to a .txt file with target words")
     arg_parser.add_argument('--corpora_paths', type=str, help="Paths to corpora separated with ;")
-    arg_parser.add_argument('--corpora_language', type=str, help="english, german, swedish or latin")
+    arg_parser.add_argument('--corpora_language', type=str, help="not needed, kept for backward compatibility")
     arg_parser.add_argument('--output_path', type=str, help="Path to a result file with embeddings")
     arg_parser.add_argument('--bert_layers', type=str,
                             help="Bert layers to extract (from 0 to 11). Possible ways to provide: "
@@ -37,8 +37,6 @@ def parse_args():
         print('Please specify path to corpora separated with ; (--corpora_paths)')
     elif not args.output_path:
         print('Please specify output path (--output_path)')
-    elif not args.corpora_language or args.corpora_language not in ['english', 'german', 'swedish', 'latin']:
-        print('Please specify a valid corpora language (--corpora_language)')
     else:
         if args.bert_layers:
             global bert_layers
@@ -168,7 +166,7 @@ def get_bert_embeddings(tokens_tensor, texts, model, dataset_name):
         for token_indices_tuple in tokens_with_indices:
             word = token_indices_tuple[0]
             indices = token_indices_tuple[1]
-            if word in targets:  # we only want embeddings for target words
+            if word in spelling_to_target:
                 average_embeddings = sum(token_embeddings[i_batch][indices]) / len(indices)
                 # If the word is split and has embeddings for each of its part, we calculate the average of its part
                 # embeddings for each layer separately
@@ -176,11 +174,11 @@ def get_bert_embeddings(tokens_tensor, texts, model, dataset_name):
                     sum_vec = torch.concat(tuple(average_embeddings[bert_layers]), dim=0).numpy()
                 else:
                     sum_vec = torch.sum(average_embeddings[bert_layers], dim=0).numpy()
-                if targets[word] not in total_embeddings[dataset_name]:
-                    total_embeddings[dataset_name][targets[word]] = sum_vec  # initial embedding
+                if spelling_to_target[word] not in total_embeddings[dataset_name]:
+                    total_embeddings[dataset_name][spelling_to_target[word]] = sum_vec  # initial embedding
                 else:  # we just stack the new embedding at the bottom of the previous ones
-                    total_embeddings[dataset_name][targets[word]] = np.vstack(
-                        [total_embeddings[dataset_name][targets[word]], sum_vec])
+                    total_embeddings[dataset_name][spelling_to_target[word]] = np.vstack(
+                        [total_embeddings[dataset_name][spelling_to_target[word]], sum_vec])
 
 
 arguments = parse_args()
@@ -201,14 +199,13 @@ else:
     bert_tokenizer = BertTokenizer.from_pretrained(arguments.model_name, state_dict=fine_tuned_model)
 bert_model.eval()
 with open(arguments.targets_path, encoding='utf-8-sig') as f:
-    if arguments.corpora_language == 'english':
-        # discarding part of speech tags in the end
-        targets = {word.strip()[:-3]: word.strip() for word in f.readlines()}
-    elif arguments.corpora_language == 'swedish':
-        # stripping accents because BERT does it
-        targets = {strip_accents(word).strip(): word.strip() for word in f.readlines()}
-    else:
-        targets = {word.strip(): word.strip() for word in f.readlines()}
+    target_to_spellings = {i.strip(): {i.strip(),
+                                       i[:i.find('_')].strip(),
+                                       strip_accents(i).strip(),
+                                       i.lower().strip(),
+                                       i.title().strip()}
+                           for i in f.readlines()}
+spelling_to_target = {spelling: target for target in target_to_spellings for spelling in target_to_spellings[target]}
 datasets = arguments.corpora_paths.split(';')
 total_embeddings = {i: {} for i in datasets}  # embeddings for all datasets here. Filled in get_bert_embeddings
 for dataset in datasets:
@@ -219,12 +216,8 @@ for dataset in datasets:
         with open(dataset, encoding='utf-8-sig') as f:
             for line in f:
                 progress_bar.update(len(line))
-                for target in targets:
-                    if arguments.corpora_language == 'swedish':
-                        text_target = targets[target]
-                    else:
-                        text_target = target
-                    if text_target in line.split():
+                for target in spelling_to_target:
+                    if target in line.split():
                         current_batch.append(line.strip())
                         batch_counter += 1
                         if not batch_counter % 8:

@@ -8,7 +8,7 @@ def parse_args():
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument('--targets_path', type=str, help="Path to a .txt file with target words")
     arg_parser.add_argument('--corpora_paths', type=str, help="Paths to corpora separated with ;")
-    arg_parser.add_argument('--corpora_language', type=str, help="english, german, swedish or latin")
+    arg_parser.add_argument('--corpora_language', type=str, help="english, german, swedish, latin or spanish")
     arg_parser.add_argument('--output_folder', type=str, help="Path to a folder for processed files")
     args = arg_parser.parse_args()
     if not args.targets_path:
@@ -17,7 +17,7 @@ def parse_args():
         print('Please specify path to corpora separated with ; (--corpora_paths)')
     elif not args.output_folder:
         print('Please specify output folder (--output_folder)')
-    elif not args.corpora_language or args.corpora_language not in ['english', 'german', 'swedish', 'latin']:
+    elif not args.corpora_language or args.corpora_language not in ['english', 'german', 'swedish', 'latin', 'spanish']:
         print('Please specify a valid corpora language (--corpora_language)')
     else:
         return args
