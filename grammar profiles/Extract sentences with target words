@@ -1,0 +1,24 @@
+import re
+
+lemmas = open('LEMMATIZED CORPUS.txt', 'r', encoding='utf8').read().split('\n')
+texts = open('NON-LEMMATIZED CORPUS.txt', 'r', encoding='utf8').read().split('\n')
+CORPUS_targets = open('CORPUS_targets.txt', 'w', encoding='utf8') # for sentences from DTA with target words
+
+numbers_lemmas = []
+
+for i in range(0, len(lemmas)):
+    numbers = lemmas[i]
+    if bool(re.findall(r'\b TARGET WORDS \b', numbers)) == True: # searshing for all the sentences with target lemmas
+        numbers_lemmas.append(i)
+        i += 1
+        
+sents = []
+
+for j in range(0, len(texts)): # matching lemmatized sentences with non-lematized ones
+    sent = texts[j]
+    for n in (numbers_lemmas):
+        if j == n:
+            sents.append(sent)
+
+for k in range(0, len(sents)):
+    CORPUS_targets.write(sents[k] + '\n') # writing sentences into a txt.file with a target word with \n sep
