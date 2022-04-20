@@ -1,0 +1,603 @@
+{
+    "actitud": {
+        "Gender=Fem|Number=Sing": 1429,
+        "Gender=Fem|Number=Plur": 408,
+        "_": 4,
+        "Gender=Masc|Number=Plur": 27,
+        "Gender=Masc|Number=Sing": 1,
+        "Number=Plur": 4
+    },
+    "ataque": {
+        "Gender=Masc|Number=Plur": 1754,
+        "Gender=Masc|Number=Sing": 1195,
+        "_": 7,
+        "Number=Plur": 5
+    },
+    "atrás": {
+        "_": 1340
+    },
+    "ausencia": {
+        "Gender=Fem|Number=Sing": 939,
+        "Gender=Fem|Number=Plur": 11,
+        "_": 4
+    },
+    "avance": {
+        "Gender=Masc|Number=Plur": 2186,
+        "Gender=Masc|Number=Sing": 1248,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 101,
+        "Number=Sing": 8,
+        "_": 3,
+        "Number=Plur": 3
+    },
+    "banco": {
+        "_": 3086,
+        "Gender=Masc|Number=Plur": 4458,
+        "Gender=Masc|Number=Sing": 1872,
+        "Gender=Fem|Number=Sing": 11,
+        "Gender=Fem|Number=Plur": 7
+    },
+    "canal": {
+        "Gender=Masc|Number=Plur": 370,
+        "Gender=Masc|Number=Sing": 195,
+        "_": 140,
+        "Gender=Fem|Number=Plur": 13,
+        "Number=Plur": 4
+    },
+    "capital": {
+        "Number=Plur": 39,
+        "Gender=Fem|Number=Sing": 3131,
+        "Number=Sing": 125,
+        "Gender=Masc|Number=Sing": 1500,
+        "Gender=Masc|Number=Plur": 886,
+        "Gender=Fem|Number=Plur": 155,
+        "_": 77
+    },
+    "cobrar": {
+        "VerbForm=Inf": 288,
+        "VerbForm=Ger": 83,
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 122,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 114,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 76,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 68,
+        "Gender=Masc|Number=Sing|VerbForm=Fin": 14,
+        "Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin": 9,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 24,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 4,
+        "Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin": 8,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin": 10,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 8,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 2,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 9,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 12,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 31,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 4,
+        "Gender=Fem|Number=Sing": 4,
+        "Gender=Masc|Number=Plur": 2,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin": 2
+    },
+    "colaborar": {
+        "VerbForm=Inf": 540,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin": 12,
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 120,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 100,
+        "VerbForm=Ger": 172,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 56,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 120,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 30,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin": 15,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 23,
+        "Gender=Masc|Number=Sing|VerbForm=Fin": 2,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 11,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 1,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin": 2,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 54,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 8,
+        "Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin": 4,
+        "Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin": 5,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 4,
+        "Gender=Masc|Number=Sing": 2,
+        "_": 1,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 2,
+        "VerbForm=Fin": 1,
+        "Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin": 1
+    },
+    "cólera": {
+        "Gender=Fem|Number=Plur": 1,
+        "Gender=Fem|Number=Sing": 101,
+        "_": 37
+    },
+    "compasión": {
+        "Gender=Fem|Number=Sing": 470,
+        "_": 5
+    },
+    "copiar": {
+        "VerbForm=Inf": 81,
+        "Gender=Fem|Number=Sing": 2,
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 3,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 1,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 8,
+        "VerbForm=Ger": 12,
+        "Number=Sing|NumType=Card": 1,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 9,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin": 7,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 1,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 1,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 3,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 2,
+        "Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part": 1,
+        "Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part": 1
+    },
+    "corriente": {
+        "Number=Plur": 353,
+        "Gender=Fem|Number=Plur": 407,
+        "Number=Sing": 762,
+        "Gender=Fem|Number=Sing": 348,
+        "Gender=Masc|Number=Sing": 75,
+        "_": 32,
+        "Gender=Masc|Number=Plur": 5
+    },
+    "declinar": {
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 24,
+        "VerbForm=Inf": 24,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 7,
+        "VerbForm=Ger": 22,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 16,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 5,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 3,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 1,
+        "Gender=Masc|Number=Sing": 1,
+        "Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin": 2,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 1,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 1
+    },
+    "demá": {},
+    "diligencia": {
+        "Gender=Fem|Number=Sing": 118,
+        "Gender=Fem|Number=Plur": 53
+    },
+    "disco": {
+        "Gender=Masc|Number=Plur": 44,
+        "Gender=Masc|Number=Sing": 57,
+        "_": 1
+    },
+    "distribuir": {
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 120,
+        "VerbForm=Inf": 406,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 124,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin": 22,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 103,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 12,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 40,
+        "Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part": 43,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 4,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 5,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin": 1,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 53,
+        "VerbForm=Ger": 29,
+        "Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin": 5,
+        "Gender=Masc|Number=Sing": 1,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 73,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin": 1,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 35,
+        "Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin": 7,
+        "_": 2,
+        "Gender=Fem|Number=Sing": 2,
+        "Gender=Fem|Number=Plur": 3,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 7,
+        "Gender=Fem|Number=Sing|Poss=Yes|PronType=Int,Rel": 1,
+        "Gender=Masc|Number=Sing|VerbForm=Fin": 1,
+        "VerbForm=Fin": 2
+    },
+    "educado": {
+        "Gender=Fem|Number=Sing|VerbForm=Part": 54,
+        "Gender=Fem|Number=Sing": 8,
+        "Gender=Masc|Number=Plur|VerbForm=Part": 74,
+        "Gender=Masc|Number=Plur": 2,
+        "Gender=Fem|Number=Plur|VerbForm=Part": 31,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 27,
+        "Gender=Fem|Number=Plur|VerbForm=Fin": 5,
+        "Gender=Fem|Number=Plur": 2,
+        "Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part": 1,
+        "Gender=Masc|Number=Sing": 1
+    },
+    "elocuente": {
+        "Number=Plur": 15,
+        "Number=Sing": 63,
+        "_": 5,
+        "Number=Plur|VerbForm=Fin": 1,
+        "Gender=Fem|Number=Sing": 1,
+        "Gender=Masc|Number=Plur": 1
+    },
+    "encargado": {
+        "Gender=Masc|Number=Sing": 113,
+        "Gender=Masc|Number=Plur": 287,
+        "Gender=Masc|Number=Plur|VerbForm=Part": 482,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 764,
+        "Gender=Fem|Number=Sing|VerbForm=Part": 412,
+        "Gender=Fem|Number=Plur|VerbForm=Part": 160,
+        "Gender=Fem|Number=Plur|VerbForm=Fin": 13,
+        "Gender=Fem|Number=Plur": 3,
+        "_": 81,
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 4,
+        "Gender=Fem|Number=Sing": 3
+    },
+    "enterar": {
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 34,
+        "Number=Sing": 4,
+        "VerbForm=Inf": 57,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 23,
+        "Gender=Fem|Number=Sing": 10,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 9,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin": 3,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin": 28,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 31,
+        "VerbForm=Fin": 3,
+        "Gender=Masc|Number=Sing": 3,
+        "Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin": 1,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 20,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 1,
+        "_": 1,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 3,
+        "VerbForm=Ger": 2,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 1,
+        "Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin": 3,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 2
+    },
+    "especulación": {
+        "Gender=Fem|Number=Sing": 237,
+        "Gender=Fem|Number=Plur": 45
+    },
+    "fallar": {
+        "Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 5,
+        "VerbForm=Ger": 29,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 12,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 65,
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 100,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 18,
+        "VerbForm=Inf": 54,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 10,
+        "Gender=Fem|Number=Sing": 3,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 2,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 8,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 2,
+        "Number=Sing": 3,
+        "Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin": 1,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 2,
+        "_": 3,
+        "Number=Plur": 2,
+        "Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin": 2,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 2,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 1,
+        "VerbForm=Fin": 1
+    },
+    "fallecimiento": {
+        "Gender=Masc|Number=Sing": 73,
+        "Gender=Masc|Number=Plur": 22,
+        "_": 2
+    },
+    "historia": {
+        "Gender=Fem|Number=Sing": 5383,
+        "_": 225,
+        "Gender=Fem|Number=Plur": 859
+    },
+    "historiador": {
+        "Gender=Masc|Number=Plur": 131,
+        "Gender=Masc|Number=Sing": 124,
+        "Gender=Fem|Number=Sing": 1
+    },
+    "impulso": {
+        "Gender=Masc|Number=Sing": 1198,
+        "Gender=Masc|Number=Plur": 85,
+        "Gender=Masc|Number=Sing|VerbForm=Fin": 4,
+        "Gender=Masc|Number=Sing|PronType=Ind": 2,
+        "_": 1
+    },
+    "indicativo": {
+        "Gender=Masc|Number=Plur": 47,
+        "Gender=Masc|Number=Sing": 53,
+        "Gender=Fem|Number=Sing": 39,
+        "Gender=Fem|Number=Plur": 23,
+        "Gender=Fem|Number=Sing|VerbForm=Fin": 1
+    },
+    "juguete": {
+        "Gender=Masc|Number=Plur": 130,
+        "Number=Sing": 15,
+        "Number=Plur": 4,
+        "Gender=Masc|Number=Sing": 59,
+        "Number=Plur|NumType=Card": 2
+    },
+    "maduro": {
+        "_": 132,
+        "Gender=Fem|Number=Plur": 20,
+        "Gender=Masc|Number=Sing": 39,
+        "Gender=Masc|Number=Plur": 25,
+        "Gender=Fem|Number=Sing": 44,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 2
+    },
+    "maravilloso": {
+        "Gender=Fem|Number=Sing": 174,
+        "Gender=Fem|Number=Plur": 102,
+        "Gender=Masc|Number=Sing": 348,
+        "Gender=Masc|Number=Plur": 53,
+        "_": 7,
+        "Gender=Masc|Number=Plur|PronType=Ind": 1,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 1
+    },
+    "marco": {
+        "Gender=Masc|Number=Sing": 8551,
+        "_": 831,
+        "Gender=Masc|Number=Plur": 532,
+        "Gender=Fem|Number=Plur": 3
+    },
+    "matiz": {
+        "Gender=Masc|Number=Plur": 36,
+        "Gender=Fem|Number=Plur": 26,
+        "Gender=Masc|Number=Sing": 9,
+        "Number=Plur": 8,
+        "Gender=Fem|Number=Sing": 8,
+        "Number=Sing": 1
+    },
+    "médula": {
+        "Gender=Fem|Number=Sing": 82,
+        "Gender=Fem|Number=Plur": 2
+    },
+    "metal": {
+        "Gender=Masc|Number=Sing": 118,
+        "Gender=Masc|Number=Plur": 158,
+        "Number=Plur": 6,
+        "_": 5
+    },
+    "metro": {
+        "Gender=Masc|Number=Sing": 181,
+        "Gender=Masc|Number=Plur": 624,
+        "_": 2
+    },
+    "modificado": {
+        "Gender=Fem|Number=Sing|VerbForm=Part": 186,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 112,
+        "Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part": 23,
+        "Gender=Masc|Number=Plur|VerbForm=Part": 245,
+        "Gender=Fem|Number=Plur|VerbForm=Part": 54,
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 38,
+        "Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part": 1,
+        "Gender=Masc|Number=Sing": 1,
+        "Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part": 2,
+        "Gender=Fem|Number=Plur": 2,
+        "Gender=Fem|Number=Sing": 3,
+        "_": 1
+    },
+    "nombrar": {
+        "VerbForm=Inf": 340,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 100,
+        "Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part": 18,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 4,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 24,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin": 5,
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 44,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 9,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 1,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 9,
+        "_": 1,
+        "Number=Sing": 1,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 7,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 16,
+        "Gender=Masc|Number=Sing|VerbForm=Fin": 14,
+        "VerbForm=Ger": 16,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 4,
+        "Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part": 1,
+        "Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin": 1,
+        "Gender=Masc|Number=Sing": 4,
+        "Gender=Masc|Number=Plur|VerbForm=Fin": 1,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 1,
+        "VerbForm=Fin": 1,
+        "Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin": 1,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 2,
+        "Gender=Fem|Number=Sing": 1,
+        "Number=Plur": 1
+    },
+    "pendiente": {
+        "Number=Sing": 272,
+        "Number=Plur": 773,
+        "Gender=Fem|Number=Sing": 68,
+        "Gender=Masc|Number=Sing": 3,
+        "_": 9,
+        "Gender=Fem|Number=Plur": 3,
+        "Gender=Masc|Number=Plur": 2
+    },
+    "pila": {
+        "Gender=Fem|Number=Plur": 62,
+        "Gender=Fem|Number=Sing": 72
+    },
+    "planta": {
+        "Gender=Fem|Number=Plur": 792,
+        "Gender=Fem|Number=Sing": 298,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 1,
+        "Number=Sing": 1,
+        "VerbForm=Inf": 2
+    },
+    "prima": {
+        "Gender=Fem|Number=Plur": 234,
+        "Gender=Fem|Number=Sing": 291,
+        "Degree=Sup|Gender=Fem|Number=Plur": 3,
+        "Degree=Abs|Gender=Fem|Number=Sing": 1
+    },
+    "propiamente": {
+        "_": 144,
+        "Number=Sing": 1
+    },
+    "próximo": {
+        "Gender=Masc|Number=Sing": 2954,
+        "Gender=Masc|Number=Plur": 2050,
+        "Gender=Fem|Number=Plur": 748,
+        "Gender=Fem|Number=Sing": 1715,
+        "_": 23,
+        "Degree=Sup|Gender=Masc|Number=Sing": 7,
+        "Degree=Sup|Gender=Fem|Number=Sing": 3,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin": 4,
+        "Degree=Abs|Gender=Fem|Number=Plur|NumType=Card|PronType=Ind": 13
+    },
+    "recomendar": {
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 109,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 18,
+        "VerbForm=Inf": 311,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 15,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin": 30,
+        "Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin": 2,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 879,
+        "Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin": 44,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 2,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 48,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 52,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 1,
+        "Number=Plur": 1,
+        "VerbForm=Ger": 16,
+        "Gender=Masc|Number=Plur|VerbForm=Fin": 11,
+        "Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part": 2,
+        "Number=Sing": 3,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 14,
+        "Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part": 2,
+        "Gender=Masc|Number=Plur|VerbForm=Part": 1,
+        "Gender=Masc|Number=Sing": 1,
+        "Gender=Fem|Number=Sing|VerbForm=Part": 2,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin": 4,
+        "Gender=Fem|Number=Sing": 1,
+        "_": 1,
+        "Gender=Fem|Number=Plur": 1,
+        "Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin": 2,
+        "Gender=Fem|Number=Plur|VerbForm=Fin": 1,
+        "Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin": 1,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 1
+    },
+    "recordar": {
+        "Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin": 212,
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 157,
+        "VerbForm=Inf": 1836,
+        "VerbForm=Fin": 274,
+        "VerbForm=Ger": 788,
+        "Gender=Masc|Number=Sing": 17,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 883,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 78,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 82,
+        "Gender=Masc|Number=Plur": 60,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 200,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 43,
+        "Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin": 31,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin": 21,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin": 71,
+        "Number=Plur": 11,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin": 65,
+        "Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part": 17,
+        "Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin": 18,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 288,
+        "Gender=Masc|Number=Sing|VerbForm=Fin": 29,
+        "Gender=Fem|Number=Sing|VerbForm=Part": 4,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin": 7,
+        "Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin": 14,
+        "Number=Sing": 5,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 10,
+        "Mood=Imp|Number=Sing|Person=3|VerbForm=Fin": 36,
+        "Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part": 3,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 6,
+        "Mood=Imp|Number=Plur|Person=1|VerbForm=Fin": 2,
+        "Gender=Masc|Number=Plur|VerbForm=Part": 2,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 2,
+        "_": 27,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 39,
+        "Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin": 6,
+        "Gender=Fem|Number=Sing|VerbForm=Fin": 1,
+        "Gender=Fem|Number=Plur": 2,
+        "Gender=Fem|Number=Plur|VerbForm=Fin": 1,
+        "Gender=Fem|Number=Sing": 1
+    },
+    "retroceder": {
+        "VerbForm=Inf": 138,
+        "Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part": 13,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 3,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 24,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 2,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin": 6,
+        "VerbForm=Ger": 21,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin": 6,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin": 10,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin": 1,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin": 1,
+        "_": 1,
+        "Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin": 1,
+        "Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin": 2,
+        "Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin": 3,
+        "Gender=Masc|Number=Sing": 1
+    },
+    "satélite": {
+        "Gender=Masc|Number=Sing": 273,
+        "Gender=Masc|Number=Plur": 253,
+        "Gender=Fem|Number=Sing": 157,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 8,
+        "Number=Sing": 7,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 5,
+        "_": 39
+    },
+    "socialista": {
+        "Number=Sing": 546,
+        "Number=Plur": 381,
+        "_": 208,
+        "Gender=Fem|Number=Sing": 1
+    },
+    "solicitud": {
+        "Gender=Fem|Number=Plur": 964,
+        "Gender=Fem|Number=Sing": 1636,
+        "Gender=Masc|Number=Sing": 2,
+        "_": 36,
+        "Number=Plur": 4,
+        "Gender=Masc|Number=Plur": 5
+    },
+    "susceptible": {
+        "Number=Plur": 136,
+        "Number=Sing": 74,
+        "Gender=Masc|Number=Plur": 2,
+        "Gender=Masc|Number=Sing": 1
+    },
+    "tarea": {
+        "Gender=Fem|Number=Sing": 2235,
+        "Gender=Fem|Number=Plur": 1433,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 1,
+        "_": 2,
+        "Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 1
+    },
+    "trato": {
+        "Gender=Masc|Number=Sing": 1529,
+        "Gender=Masc|Number=Plur": 761,
+        "Gender=Masc|Number=Plur|VerbForm=Part": 12,
+        "_": 55,
+        "Gender=Masc|Number=Sing|VerbForm=Part": 2
+    },
+    "tropical": {
+        "Number=Sing": 74,
+        "Number=Plur": 191,
+        "_": 7,
+        "Gender=Masc|Number=Sing": 1
+    },
+    "variedad": {
+        "Gender=Fem|Number=Sing": 658,
+        "Gender=Fem|Number=Plur": 126
+    },
+    "viernes": {
+        "_": 496
+    },
+    "visita": {
+        "Gender=Fem|Number=Sing": 1057,
+        "Gender=Fem|Number=Plur": 587,
+        "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin": 13,
+        "Gender=Fem|Number=Plur|VerbForm=Part": 8,
+        "_": 9,
+        "Number=Plur": 1,
+        "Gender=Fem|Number=Sing|VerbForm=Fin": 1
+    },
+    "vuestro": {
+        "Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs": 43,
+        "Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs": 50,
+        "Gender=Masc|Number=Plur": 20,
+        "Gender=Masc|Number=Sing": 4,
+        "_": 4,
+        "Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs": 1
+    }
+}
