@@ -1,12 +1,12 @@
-### Self similarity first results
+### Exploring Self Similarity metric for Semantic Change Detection 
 
-#### Files description:
+## Directories
 
-- Self Similarity.ipynb: jupyter notebook with analysis of the first results
-- self_sim_by_layer_ccoha1.csv: CCOHA1 self-similarity values by layer
-- self_sim_by_layer_ccoha1.csv: CCOHA2 self-similarity values by layer
-- self_sim_summed_ccoha1.csv: CCOHA1 self-similarity values for summed embeddings
-- self_sim_summed_ccoha2.csv: CCOHA2 self-similarity values for summed embeddings
-- self_sim_calculation.py & self_sim_calculation_summed.py: python scripts for self-sim calculation
+— **english**: self-similarities for English <br>
+— **german**: self-similarities for German <br>
+— **latin**: self-similarities for Latin <br>
+— **spearman**: Spearman's rank correlation between self-similarities and gold standart for graded task <br>
 
-
+## Code
+— **self_sim_calculation.py**: calculate self-similarities from concated embeddings (12 layers) <br>
+— **self_sim_calculation_summed.py**: calculate self-similarities from summed embeddings <br>
