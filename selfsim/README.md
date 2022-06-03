@@ -1,4 +1,4 @@
-## Exploring Self Similarity measure for Semantic Change Detection 
+## Exploring Self Similarity metric for Semantic Change Detection 
 
 ### Directories
 
